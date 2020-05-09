@@ -22,6 +22,10 @@ app.use(cors());
 
 app.use(routes);
 
+app.get("/", (req, res) => {
+  return res.status(200).send("well done");
+});
+
 app.listen(port, () => {
   console.log(`App running on port ${port}...`);
 });
