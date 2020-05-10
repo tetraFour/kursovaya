@@ -8,7 +8,7 @@ router.get(
   "/getUser",
   passport.authenticate("jwt", { session: false }),
   (req, res) => {
-    console.log(req.user);
+    // console.log(req.user);
     return res.send(req.user);
   }
 );

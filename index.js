@@ -2,7 +2,6 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const app = express();
-// const knex = require("knex");
 
 const port = process.env.PORT || 5000;
 
@@ -23,7 +22,7 @@ app.use(cors());
 app.use(routes);
 
 app.get("/", (req, res) => {
-  return res.status(200).send("well done");
+  return res.status(200).send("well done...");
 });
 
 app.listen(port, () => {
